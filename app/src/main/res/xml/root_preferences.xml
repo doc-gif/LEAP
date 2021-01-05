@@ -1,0 +1,39 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="テーマ設定">
+
+        <ListPreference
+            app:entries="@array/entry"
+            app:entryValues="@array/entryValues"
+            app:key="themeColor"
+            app:title="アプリのテーマ"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceScreen app:title="a" />
+
+    <PreferenceCategory app:title="単語の意味" >
+
+        <CheckBoxPreference
+            app:title="2つ目以降の意味"
+            app:key="correct" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

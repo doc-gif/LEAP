@@ -1,0 +1,14 @@
+<resources>
+    <string-array name="entry">
+        <item>ライト</item>
+        <item>ダーク</item>
+        <item>システム設定に従う</item>
+    </string-array>
+
+    <string-array name="entryValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>
